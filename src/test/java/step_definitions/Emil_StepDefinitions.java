@@ -4,7 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import pages.EmployeesPage_emil;
+import utilities.BrowserUtils;
 import utilities.Driver;
 
 public class Emil_StepDefinitions {
@@ -59,10 +61,47 @@ EmployeesPage_emil employeesPage_emil =new EmployeesPage_emil();
     public void user_click_save_button() {
         employeesPage_emil.saveButton.click();
 
+
     }
 
     @Then("user see employees name on the page")
     public void userSeeEmployeesNameOnThePage() {
         employeesPage_emil.employeesInfo.isDisplayed();
+    }
+
+
+    @And("user does not fill in the blank")
+    public void userDoesNotFillInTheBlank() {
+        employeesPage_emil.createButton.click();
+        employeesPage_emil.saveButton.click();
+
+
+    }
+
+    @Then("user should see error message on the screen")
+    public void userShouldSeeErrorMessageOnTheScreen() {
+        BrowserUtils.sleep(1);
+        employeesPage_emil.errorMessage.isDisplayed();
+    }
+
+    @When("user click discard button")
+    public void userClickDiscardButton() {
+    employeesPage_emil.discardButton.click();
+    }
+
+    @And("user see employees list on the screen")
+    public void userSeeEmployeesListOnTheScreen() {
+        employeesPage_emil.employeesList.isDisplayed();
+    }
+
+    @And("user should write on the search box employee name")
+    public void userShouldWriteOnTheSearchBoxEmployeeName() {
+        employeesPage_emil.searchBox.sendKeys("emil"+ Keys.ENTER);
+    }
+
+    @Then("user should see new employees data")
+    public void userShouldSeeNewEmployeesData() {
+        employeesPage_emil.employeeData.isDisplayed();
+
     }
 }
