@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
         dryRun = false,
-        tags = "@BRT-796",
+        tags = "@BRT-796 or @BRT-798 or @BRT-799",
         publish = true
 )
 
