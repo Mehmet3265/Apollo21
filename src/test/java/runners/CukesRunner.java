@@ -18,9 +18,10 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
         dryRun = false,
-        tags = "@BRT-796 or @BRT-798 or @BRT-799",
+        tags = "@wip or @wip1 or @wip2",
         publish = true
 )
+//@BRT-796 or @BRT-798 or @BRT-799
 
 public class CukesRunner {
 
