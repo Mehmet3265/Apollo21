@@ -1,0 +1,1 @@
+file:src/test/resources/features/inventory_caner.feature:6:20:29
