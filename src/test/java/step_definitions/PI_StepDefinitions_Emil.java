@@ -19,7 +19,7 @@ PageInventory_Emil pageInventory_emil = new PageInventory_Emil();
 
     @When("user go the web site")
     public void user_go_the_web_site() {
-        Driver.getDriver().get("https://qa.fidexio.com/web/login");
+        Driver.getDriver().get("https://qa.upgenix.net/web/login");
 
     }
     @When("user enter valid username {string}")
@@ -106,9 +106,9 @@ PageInventory_Emil pageInventory_emil = new PageInventory_Emil();
     }
 
     @And("user should fill the product name in the search box")
-    public void userShouldFillTheProductNameInTheSearchBox(String smartphone) {
-        pageInventory_emil.searchBox.sendKeys(smartphone);
-        pageInventory_emil.searchBox.click();
+    public void userShouldFillTheProductNameInTheSearchBox() {
+        pageInventory_emil.searchBox.sendKeys();
+        pageInventory_emil.searchBox.sendKeys("smartphone"+Keys.ENTER);
 
     }
 
