@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @BRT-796</title>
+<title>Cucumber Reports  - Tag: @wip2</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>07 Ara 2022, 15:34</td>
+      <td>01 Ara 2022, 20:55</td>
     </tr>
   </tbody>
 </table>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@BRT-796</td>
-          <td      class="passed"    >10</td>
+          <td class="tagname">@wip2</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">10</td>
+          <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="24779617300">24.779</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="114931800">0.114</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,42 +171,42 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3118373248.html">User can reach New Employee Form by clicking Employees</a>
+      <a href="report-feature_1668991908.html">User enters inventory and can create new products</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2890457610.html">@BRT-796</a>
+       <a href="report-tag_2210238547.html">@wip2</a>
 </div>
 
 
-  <span class="lead-duration duration">24.779</span>
+  <span class="lead-duration duration">0.114</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">New Employee Form will be created</span>
+  <span class="name">Verify that the user should be able to</span>
 
 
      <i class="chevron fa fa-fw"></i>
 </div>
 
   </span>
-  <div class="description indention"></div>
+  <div class="description indention">  see created Product is listed after clicking the Products module.</div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,15 +216,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user go to main page</span>
+  <span class="name">user click products button</span>
 
-  <span class="lead-duration duration">8.012</span>
+  <span class="lead-duration duration">0.091</span>
 
 </div>
 
@@ -247,11 +247,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
-  <span class="name">user enters username <span class="argument">&quot;posmanager15@info.com&quot;</span></span>
+  <span class="name">user should fill the product name in the search box</span>
 
-  <span class="lead-duration duration">0.102</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -259,6 +259,27 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.IllegalArgumentException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at step_definitions.PI_StepDefinitions_Emil.userShouldFillTheProductNameInTheSearchBox(PI_StepDefinitions_Emil.java:110)
+	at &#10045;.user should fill the product name in the search box(file:///C:/Users/Emil/IdeaProjects/Apollo21/src/test/resources/features/pi_emil.feature:32)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -274,200 +295,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enters password <span class="argument">&quot;posmanager&quot;</span></span>
-
-  <span class="lead-duration duration">0.082</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks login button</span>
-
-  <span class="lead-duration duration">2.683</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user confirm it is on the page</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user click employees button</span>
-
-  <span class="lead-duration duration">1.068</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user click create button</span>
-
-  <span class="lead-duration duration">3.641</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user fill in the blank</span>
-
-  <span class="lead-duration duration">7.759</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user click save button</span>
-
-  <span class="lead-duration duration">0.063</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user see employees name on the page</span>
+  <span class="name">user see product name on the screen</span>
 
-  <span class="lead-duration duration">1.356</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 

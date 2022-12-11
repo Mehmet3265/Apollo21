@@ -21,6 +21,7 @@ import org.junit.runner.RunWith;
         tags = "@BRT-796 or @BRT-798 or @BRT-799",
         publish = true
 )
+//@BRT-796 or @BRT-798 or @BRT-799
 
 public class CukesRunner {
 
